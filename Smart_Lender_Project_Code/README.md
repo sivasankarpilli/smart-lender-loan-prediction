@@ -1,11 +1,4 @@
 # Smart Lender –Loan Approval Prediction System
-
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-XGBoost-orange)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-Educational-blue)
-
 ---
 
 # Overview
