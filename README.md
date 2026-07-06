@@ -2,14 +2,6 @@
 
 # Smart Lender –Loan Approval Prediction System
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-XGBoost-orange)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-Educational-blue)
-
----
-
 # Overview
 
 **Smart Lender** is an Artificial Intelligence and Machine Learning based web application that predicts whether a customer's loan application should be approved or rejected based on their personal and financial information.
@@ -68,14 +60,11 @@ The project uses the **XGBoost Classifier**, a powerful ensemble learning algori
 # Project Structure
 
 ```
-Smart_Lender/
+Smart_Lender_Project_Code/
 
 │
 ├── Dataset/
 │   └── loan_prediction.csv
-│
-├── Training/
-│   └── Smart Lender Using ML.ipynb
 │
 ├── Flask/
 │   │
@@ -92,184 +81,13 @@ Smart_Lender/
 │         ├── style.css
 │         └── background.jpeg
 │
+├── Training/
+│   └── Smart Lender Using ML.ipynb
+│
 ├── Project_Screenshot_Images.pdf
 │
 └── README.md
 ```
-
----
-
-# Dataset Description
-
-The dataset contains historical loan application records collected from previous applicants.
-
-Each record consists of demographic, financial, and credit-related information.
-
-### Dataset Features
-
-| Feature | Description |
-|----------|-------------|
-| Gender | Male/Female |
-| Married | Marital Status |
-| Dependents | Number of Dependents |
-| Education | Graduate/Not Graduate |
-| Self Employed | Employment Status |
-| Applicant Income | Monthly Income |
-| Coapplicant Income | Co-applicant Monthly Income |
-| Loan Amount | Requested Loan Amount |
-| Loan Amount Term | Loan Duration |
-| Credit History | Credit Score History |
-| Property Area | Urban/Semiurban/Rural |
-| Loan Status | Approved/Rejected |
-
----
-
-# Working of the Project
-
-The project follows the complete Machine Learning pipeline.
-
-## Step 1
-
-Collect historical loan application data.
-
-↓
-
-## Step 2
-
-Clean the dataset by handling missing values.
-
-↓
-
-## Step 3
-
-Encode categorical variables into numerical values.
-
-↓
-
-## Step 4
-
-Scale numerical features using StandardScaler.
-
-↓
-
-## Step 5
-
-Train the XGBoost model.
-
-↓
-
-## Step 6
-
-Evaluate model accuracy.
-
-↓
-
-## Step 7
-
-Save the trained model using Pickle.
-
-↓
-
-## Step 8
-
-Deploy the model using Flask.
-
-↓
-
-## Step 9
-
-Accept user inputs from the web page.
-
-↓
-
-## Step 10
-
-Predict loan approval status.
-
----
-
-# Data Preprocessing
-
-Before training, the following preprocessing steps are performed:
-
-- Missing value handling
-- Label Encoding
-- Feature Scaling
-- Data Cleaning
-- Feature Selection
-- Train-Test Split
-
----
-
-# Prediction Workflow
-
-```
-User Inputs
-
-        ↓
-
-HTML Form
-
-        ↓
-
-Flask Backend
-
-        ↓
-
-Data Preprocessing
-
-        ↓
-
-Feature Scaling
-
-        ↓
-
-XGBoost Model
-
-        ↓
-
-Prediction
-
-        ↓
-
-Loan Approved / Loan Rejected
-```
-
----
-
-# Input Parameters
-
-The application requires the following inputs:
-
-- Gender
-- Married
-- Dependents
-- Education
-- Self Employed
-- Applicant Income
-- Co-applicant Income
-- Loan Amount
-- Loan Amount Term
-- Credit History
-- Property Area
-
----
-
-# Output
-
-The trained model predicts one of the following outcomes:
-
-### Loan Approved
-
-The applicant satisfies the conditions for loan approval.
-
-or
-
-### Loan Rejected
-
-The applicant does not satisfy the loan eligibility criteria.
-
----
 
 # Installation Guide
 
