@@ -1,5 +1,4 @@
 # Smart Lender –Loan Approval Prediction System
----
 
 # Overview
 
