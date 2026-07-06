@@ -58,14 +58,10 @@ The project uses the **XGBoost Classifier**, a powerful ensemble learning algori
 # Project Structure
 
 ```
-Smart_Lender/
-
+Smart_Lender_Project_Code/
 │
 ├── Dataset/
 │   └── loan_prediction.csv
-│
-├── Training/
-│   └── Smart Lender Using ML.ipynb
 │
 ├── Flask/
 │   │
@@ -81,6 +77,9 @@ Smart_Lender/
 │   └── Static/
 │         ├── style.css
 │         └── background.jpeg
+│
+├── Training/
+│   └── Smart Lender Using ML.ipynb
 │
 ├── Project_Screenshot_Images.pdf
 │
