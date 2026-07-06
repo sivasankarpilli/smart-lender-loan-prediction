@@ -61,7 +61,6 @@ The project uses the **XGBoost Classifier**, a powerful ensemble learning algori
 
 ```
 Smart_Lender_Project_Code/
-
 │
 ├── Dataset/
 │   └── loan_prediction.csv
