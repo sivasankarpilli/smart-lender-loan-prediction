@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lender - Loan Approval Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>🏦 Smart Lender</h1>
+            <h3>Loan Approval Prediction System</h3>
+        </div>
+
+        <form action="/predict" method="POST">
+
+            <!-- Section 1: Personal Profile -->
+            <div class="form-section">
+                <div class="form-section-title">
+                    <span>👤</span> Personal Profile
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="Gender">Gender</label>
+                        <select name="Gender" id="Gender" required>
+                            <option value="">Select</option>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Married">Marital Status</label>
+                        <select name="Married" id="Married" required>
+                            <option value="">Select</option>
+                            <option value="1">Married</option>
+                            <option value="0">Unmarried</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Dependents">Dependents</label>
+                        <select name="Dependents" id="Dependents" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Education">Education</label>
+                        <select name="Education" id="Education" required>
+                            <option value="0">Graduate</option>
+                            <option value="1">Not Graduate</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Self_Employed">Self Employed</label>
+                        <select name="Self_Employed" id="Self_Employed" required>
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Financial Profile -->
+            <div class="form-section">
+                <div class="form-section-title">
+                    <span>💼</span> Financial Status
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="ApplicantIncome">Applicant Income ($)</label>
+                        <input type="number" name="ApplicantIncome" id="ApplicantIncome" placeholder="Enter Applicant Income" required min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="CoapplicantIncome">Co-applicant Income ($)</label>
+                        <input type="number" name="CoapplicantIncome" id="CoapplicantIncome" placeholder="Enter Co-applicant Income" required min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Credit_History">Credit History</label>
+                        <select name="Credit_History" id="Credit_History" required>
+                            <option value="1">Good (1)</option>
+                            <option value="0">Bad (0)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Loan Details -->
+            <div class="form-section">
+                <div class="form-section-title">
+                    <span>🏠</span> Loan Request Details
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="LoanAmount">Loan Amount (in Thousands)</label>
+                        <input type="number" name="LoanAmount" id="LoanAmount" placeholder="e.g. 150 for $150,000" required min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Loan_Amount_Term">Loan Term (in Days)</label>
+                        <input type="number" name="Loan_Amount_Term" id="Loan_Amount_Term" placeholder="e.g., 360" required min="12">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Property_Area">Property Area</label>
+                        <select name="Property_Area" id="Property_Area" required>
+                            <option value="0">Rural</option>
+                            <option value="1">Semiurban</option>
+                            <option value="2">Urban</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">
+                <span>🔮</span> Predict Loan Status
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
