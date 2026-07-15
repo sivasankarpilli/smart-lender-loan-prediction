@@ -1,5 +1,7 @@
 -AI-powered Smart Lender project developed as part of the SmartBridge internship.
 
+# Project Demo Link: https://drive.google.com/file/d/1JgW4P2kqRXlz28WcJpJED8xurcGbGdDv/view
+
 # Smart Lender –Loan Approval Prediction System
 
 # Overview
